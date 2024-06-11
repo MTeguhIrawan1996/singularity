@@ -1,12 +1,13 @@
 import { Anchor, Text, Title } from '@mantine/core';
 
-import classes from './Welcome.module.css';
+import { env } from '@/env';
 
 export default function Welcome() {
+  const fo = env.BASE_URL;
   return (
     <>
-      <Title className={classes.title} ta='center' mt={100}>
-        Welcome to{' '}
+      <Title ta='center' mt='xl' bg='blue.2'>
+        Welcome to {fo}
         <Text
           inherit
           variant='gradient'
