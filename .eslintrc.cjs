@@ -18,6 +18,7 @@ module.exports = {
     '**/*.config.mjs',
     '**/*.config.cjs',
     'cz.config.cjs',
+    'jest.setup.cjs',
     'commitlint.config.cjs',
     '.prettierrc.cjs',
     '.eslintrc.cjs',
