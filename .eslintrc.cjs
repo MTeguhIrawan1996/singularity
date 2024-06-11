@@ -15,11 +15,12 @@ module.exports = {
     'plugin:jest/recommended',
   ],
   ignorePatterns: [
-    '!.config.js',
-    '!cz.config.js',
-    '!commitlint.config.js',
-    '!.prettierrc.js',
-    '!.eslintrc.js',
+    '**/*.config.mjs',
+    '**/*.config.cjs',
+    'cz.config.cjs',
+    'commitlint.config.cjs',
+    '.prettierrc.cjs',
+    '.eslintrc.cjs',
   ],
   rules: {
     'no-unused-vars': 'off',
