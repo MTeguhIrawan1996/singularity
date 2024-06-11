@@ -1,11 +1,18 @@
 import { MantineProvider } from '@mantine/core';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Roboto } from 'next/font/google';
 
 import './globals.css';
 import '@mantine/core/styles.css';
 
-const inter = Inter({ subsets: ['latin'] });
+import { theme } from '@/theme';
+
+const roboto = Roboto({
+  weight: ['400', '500', '700', '300'],
+  subsets: ['latin'],
+  display: 'swap',
+  style: ['normal', 'italic'],
+});
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -19,8 +26,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
-        <MantineProvider>{children}</MantineProvider>
+      <body className={roboto.className}>
+        <MantineProvider theme={theme}>{children}</MantineProvider>
       </body>
     </html>
   );
