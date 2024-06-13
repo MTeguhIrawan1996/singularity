@@ -30,6 +30,8 @@ module.exports = {
     'react/no-unescaped-entities': 'off',
     'react/display-name': 'off',
     'jsx-quotes': ['error', 'prefer-single'],
+    'arrow-body-style': 'off',
+    'linebreak-style': 'off',
     'react/jsx-curly-brace-presence': [
       'warn',
       { props: 'never', children: 'never' },
