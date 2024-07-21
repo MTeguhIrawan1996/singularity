@@ -26,8 +26,8 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^3.6.0",
-    "@mantine/core": "^7.10.1",
-    "@mantine/hooks": "^7.10.1",
+    "@mantine/core": "^7.11.2",
+    "@mantine/hooks": "^7.11.2",
     "@next/bundle-analyzer": "^14.2.3",
     "@t3-oss/env-core": "^0.10.1",
     "@tabler/icons-react": "^3.5.0",
