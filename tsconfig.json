@@ -17,7 +17,8 @@
     "baseUrl": "./",
     "paths": {
       "@/*": ["./src/*"],
-      "~/*": ["./public/*"]
+      "~/*": ["./public/*"],
+      "@/components/*": ["./src/components/*"]
     },
     "noImplicitAny": false,
     "incremental": true,

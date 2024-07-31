@@ -1,10 +1,9 @@
-import Welcome from '@/components/features/Welcome/Welcome';
-
+import Home from '@/app/page';
 import { render, screen } from '@/test-utils';
 
-describe('Welcome component', () => {
+describe('Home component', () => {
   it('has correct Next.js theming section link', () => {
-    render(<Welcome />);
+    render(<Home />);
     expect(screen.getByText('this guide')).toHaveAttribute(
       'href',
       'https://mantine.dev/guides/next/',

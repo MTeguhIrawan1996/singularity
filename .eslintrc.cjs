@@ -9,9 +9,9 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
-    'next',
     'prettier',
     'mantine',
+    'plugin:@next/next/recommended',
     'plugin:jest/recommended',
   ],
   ignorePatterns: [
@@ -22,6 +22,7 @@ module.exports = {
     'commitlint.config.cjs',
     '.prettierrc.cjs',
     '.eslintrc.cjs',
+    '/coverage',
   ],
   rules: {
     'no-unused-vars': 'off',

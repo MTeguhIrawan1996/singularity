@@ -10,7 +10,7 @@ import {
   useMantineColorScheme,
 } from '@mantine/core';
 
-export default function Welcome() {
+export default function HomePage() {
   const { setColorScheme, clearColorScheme } = useMantineColorScheme();
 
   return (
