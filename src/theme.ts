@@ -21,8 +21,8 @@ export const theme = createTheme({
   },
 
   /* Colors */
-  primaryShade: 5,
-  primaryColor: 'teal',
+  primaryShade: 6,
+  primaryColor: 'gray',
   colors: {
     'bright-pink': [
       '#F0BBDD',
@@ -56,4 +56,5 @@ export const theme = createTheme({
     md: '1px 1px 3px rgba(0, 0, 0, .25)',
     xl: '5px 5px 3px rgba(0, 0, 0, .25)',
   },
+  cursorType: 'pointer',
 });

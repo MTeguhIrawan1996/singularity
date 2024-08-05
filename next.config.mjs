@@ -6,17 +6,22 @@ const jiti = createJiti(fileURLToPath(import.meta.url));
 jiti('./src/env.ts');
 
 import bundleAnalyzer from '@next/bundle-analyzer';
+import createNextIntlPlugin from 'next-intl/plugin';
+
+const withNextIntl = createNextIntlPlugin();
 
 const withBundleAnalyzer = bundleAnalyzer({
   enabled: process.env.ANALYZE === 'true',
 });
 
-export default withBundleAnalyzer({
-  reactStrictMode: false,
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  experimental: {
-    optimizePackageImports: ['@mantine/core', '@mantine/hooks'],
-  },
-});
+export default withBundleAnalyzer(
+  withNextIntl({
+    reactStrictMode: false,
+    eslint: {
+      ignoreDuringBuilds: true,
+    },
+    experimental: {
+      optimizePackageImports: ['@mantine/core', '@mantine/hooks'],
+    },
+  }),
+);
