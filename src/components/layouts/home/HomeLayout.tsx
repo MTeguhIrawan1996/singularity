@@ -12,23 +12,23 @@ type IHomeLayoutProps = {
 
 export const HomeLayout = ({ children }: IHomeLayoutProps) => {
   return (
-    <AppShell header={{ height: 60 }} padding='md'>
+    <AppShell header={{ height: 60 }} padding="md">
       <AppShell.Header>
-        <Group h='100%' px='md'>
-          <Group justify='space-between' style={{ flex: 1 }}>
-            <Group gap='xs'>
-              <MantineLogo size={30} type='mark' color='blue' />
+        <Group h="100%" px="md">
+          <Group justify="space-between" style={{ flex: 1 }}>
+            <Group gap="xs">
+              <MantineLogo size={30} type="mark" color="blue" />
               <Text
-                size='xl'
+                size="xl"
                 fw={900}
-                component='span'
-                variant='gradient'
+                component="span"
+                variant="gradient"
                 gradient={{ from: 'gray', to: 'blue', deg: 360 }}
               >
                 OneMovie
               </Text>
             </Group>
-            <Group ml='xl' gap='sm'>
+            <Group ml="xl" gap="sm">
               <ThemeButton />
               <InternatinoalizationButton />
             </Group>
@@ -37,7 +37,7 @@ export const HomeLayout = ({ children }: IHomeLayoutProps) => {
       </AppShell.Header>
 
       <AppShell.Main>
-        <Container bg='blue' size='lg' pos='relative'>
+        <Container bg="blue" size="lg" pos="relative">
           {children}
         </Container>
       </AppShell.Main>

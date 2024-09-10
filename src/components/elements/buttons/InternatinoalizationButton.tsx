@@ -14,9 +14,9 @@ export function InternatinoalizationButton() {
 
   return (
     <Switch
-      color='blue.6'
+      color="blue.6"
       checked={(locale as Locale) === 'id'}
-      size='md'
+      size="md"
       onLabel={<Text fz={10}>ID</Text>}
       offLabel={<Text fz={10}>EN</Text>}
       onChange={handleSetLocale}

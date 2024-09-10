@@ -20,8 +20,8 @@ export function ThemeButton() {
   return (
     <Switch
       checked={colorScheme === 'dark'}
-      size='md'
-      color='blue.6'
+      size="md"
+      color="blue.6"
       onLabel={moonIcon}
       offLabel={sunIcon}
       onChange={handleSetTheme}

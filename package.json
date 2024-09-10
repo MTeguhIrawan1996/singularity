@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "analyze": "ANALYZE=true next build",
+    "analyze": "cross-env ANALYZE=true next build",
     "start": "next start",
     "lint": "next lint",
     "git:commit": "cz",
@@ -27,8 +27,8 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
-    "@mantine/core": "^7.11.2",
-    "@mantine/hooks": "^7.11.2",
+    "@mantine/core": "^7.12.2",
+    "@mantine/hooks": "^7.12.2",
     "@mantinex/mantine-logo": "^1.0.1",
     "@next/bundle-analyzer": "^14.2.3",
     "@t3-oss/env-nextjs": "^0.11.0",
@@ -45,7 +45,7 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@commitlint/config-conventional": "^19.2.2",
+    "@commitlint/config-conventional": "^19.4.1",
     "@next/eslint-plugin-next": "^14.2.5",
     "@tanstack/eslint-plugin-query": "^5.51.15",
     "@tanstack/react-query-devtools": "^5.51.15",
@@ -60,8 +60,9 @@
     "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@typescript-eslint/parser": "^7.18.0",
     "commitizen": "^4.3.0",
-    "commitlint": "^19.3.0",
+    "commitlint": "^19.4.1",
     "commitlint-config-gitmoji": "^2.3.1",
+    "cross-env": "^7.0.3",
     "cz-customizable": "^7.2.1",
     "eslint": "8.57.0",
     "eslint-config-airbnb": "^19.0.4",
@@ -88,10 +89,6 @@
     "prettier": "^3.3.1",
     "ts-jest": "^29.2.3",
     "typescript": "^5.5.4"
-  },
-  "resolutions": {
-    "wrap-ansi": "7.0.0",
-    "string-width": "4.1.0"
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [

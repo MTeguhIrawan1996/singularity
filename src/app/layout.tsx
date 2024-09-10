@@ -34,7 +34,7 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <head>
-        <ColorSchemeScript defaultColorScheme='light' />
+        <ColorSchemeScript defaultColorScheme="light" />
       </head>
       <body className={nonito.className}>
         <NextIntlClientProvider messages={messages}>
